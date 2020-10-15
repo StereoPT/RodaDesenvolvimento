@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Roda do Desenvolvimento</title>
+        
+        <script src="https://kit.fontawesome.com/f754085b3a.js" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light bg-peachpuff shadow-sm">
+            <span id="titulo" class="navbar-brand mb-0 mx-auto">Roda do Desenvolvimento</span>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <svg id="roda" class="mx-auto mt-3" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <image href="./img/logotipo.jpg" x="50%" y="50%" width="270" height="270" transform="translate(-135, -125)"/>
+                    <path class="st1" etapa="0" d="M276.3,19.6L295.2,60l-18.5,39.1c70.5,9.2,126.4,64.9,136,135.2l39.7,17.6l39.8-17.6  C482,120.1,390.7,29.3,276.3,19.6z" />
+                    <path class="st0" etapa="1" d="M452.5,301.2l-40.6-17.8c-11.3,64.8-62.1,116-126.6,128.1L265,452.9l19.5,38.6c108.5-13,194.5-99.2,207.2-207.8  L452.5,301.2z" />
+                    <path class="st3" etapa="2" d="M102.1,292.6l-42.5-19.4l-38.2,18.3C37.6,399.1,125.9,483,235.5,492.4l-19.7-39.4l19.9-40.1  C170.1,404.4,117.1,355.9,102.1,292.6z" />
+                    <path class="st2" etapa="3" d="M59.6,224l38.9,18.4c6.1-71.3,59.5-129.2,128.8-141.9L246,60.1l-18.7-39.6C114,34.1,25.4,127.6,19.1,242.9  L59.6,224z" />
+                    <g class="this-is-text">
+                        <text dominant-baseline="middle" text-anchor="middle" fill="black" pointer-events="none">
+                            <tspan x="89%" y="40%">1</tspan>
+                            <tspan x="60%" y="87%">2</tspan>
+                            <tspan x="14%" y="60%">3</tspan>
+                            <tspan x="40%" y="12%">4</tspan>
+                        </text>
+                    </g>
+                    <!--<g class="this-is-icons">
+                        <image x="75%" y="25%" width="64" height="64" transform="translate(-32, -32)" pointer-events="none" href="./img/puzzle-piece-solid.svg" />
+                        <image x="75%" y="75%" width="64" height="64" transform="translate(-32, -32)" pointer-events="none" href="./img/puzzle-piece-solid.svg" />
+                        <image x="25%" y="25%" width="64" height="64" transform="translate(-32, -32)" pointer-events="none" href="./img/puzzle-piece-solid.svg" />
+                        <image x="25%" y="75%" width="64" height="64" transform="translate(-32, -32)" pointer-events="none" href="./img/puzzle-piece-solid.svg" />
+                    </g>-->
+                </svg>
+            </div>
+            <div class="row mt-3">
+                <div class="progress mx-auto" id="etapasProgress">
+                    <div class="progress-bar bg-panidor progress-bar-striped" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="accordion mx-auto" id="etapas">
+                    <div class="card">
+                        <div class="card-header" id="etapaOne">
+                            <input type="checkbox" etapa="0" aria-label="Checkbox for Etapa 1">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    1. Definição de Estruturas / Tarefas e Responsabilidades
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="etapaOne" data-parent="#etapas">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-light text-body">Organigramas</li>
+                                    <li class="list-group-item list-group-item-light text-body">MFR's</li>
+                                    <li class="list-group-item list-group-item-light text-body">Planos Individuais de Formação</li>
+                                    <li class="list-group-item list-group-item-dark text-muted">Modelos de Tutoria</li>
+                                    <li class="list-group-item list-group-item-dark text-muted">Matrizes de Qualificação</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="etapaTwo">
+                            <input type="checkbox" etapa="1" aria-label="Checkbox for Etapa 2">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2. Avaliação de Desempenho
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="etapaTwo" data-parent="#etapas">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-light text-body">Auto-Avaliação</li>
+                                    <li class="list-group-item list-group-item-light text-body">Hetero-Avaliação</li>
+                                    <li class="list-group-item pl-5 ">Validação do MFR</li>
+                                    <li class="list-group-item pl-5">Validação de Atribuições Especiais</li>
+                                    <li class="list-group-item pl-5">Feedback sobre Comportamentos e Atitudes</li>
+                                    <li class="list-group-item pl-5">Necessidades de Formação</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="etapaThree">
+                            <input type="checkbox" etapa="2" aria-label="Checkbox for Etapa 3">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3. Revisão do Modelo de Competências e Qualificação
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="etapaThree" data-parent="#etapas">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-light text-body">Atualização dos MFR's</li>
+                                    <li class="list-group-item list-group-item-light text-body">Definição do Plano Anual de Formação</li>
+                                    <li class="list-group-item list-group-item-dark text-muted">Atualização das Matrizes de Qualificação</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="etapaFour">
+                            <input type="checkbox" etapa="3" aria-label="Checkbox for Etapa 4">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    4. Gestão de Talento
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="etapaFour" data-parent="#etapas">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-light text-body">Execução do Plano Anual de Formação</li>
+                                    <li class="list-group-item list-group-item-dark text-muted">Identificação das Posições-Chave e Planos de Sucessão</li>
+                                    <li class="list-group-item list-group-item-dark text-muted">Mapeamento de Talentos</li>
+                                    <li class="list-group-item list-group-item-dark text-muted">Planos de Desenvolvimento</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" tabindex="-1" id="completedModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title">
+                                <i class="fas fa-check-circle mr-2"></i>
+                                Bom Trabalho!
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center h5">Juntos Alcançamos o Sucesso!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="input.js"></script>
+    </body>
+</html>

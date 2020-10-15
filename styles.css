@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
+.bg-panidor {
+    background-color: #E14726;
+}
+
+.bg-peachpuff {
+    background-color: peachpuff;
+}
+
+#roda {
+    width: 256;
+    height: 256px;
+}
+
+#roda path {
+    fill:#F1F2F4;
+    stroke: #F1F2F4;
+    stroke-width: 15;
+    stroke-linecap: square;
+    stroke-linejoin: square;
+    stroke-miterlimit: 10;
+    transition: fill stroke .3s ease;
+}
+
+#roda text {
+    font: bold 72px 'Alegreya Sans';
+    user-select: none;
+}
+
+#etapas {
+    min-width: 90%;
+    max-width: 90%;
+}
+
+#etapas .card .card-header {
+    display: flex;
+}
+
+#etapas .card .card-header button {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+#etapas .card .card-header input {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 0.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+}
+
+#etapas .card .card-header h2 {
+    width: 100%;
+}
+
+#etapasProgress {
+    width: 30%;
+}
+
+#titulo {
+    padding: 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
